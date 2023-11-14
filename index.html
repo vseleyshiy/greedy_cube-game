@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>greedy cube - vseleyshiy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="short icon" href="img/short_icon.png">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="defeat" id="defeat">
+            Вы проиграли!<br>
+            <span style="font-size: 19px;">Вернитесь на поле.</span>
+        </div>
+        <div class="container">
+            <div class="container-title" id="check">
+                Счёт: 0
+            </div>
+            <div class="map" id="map">
+                <div class="square" id="square"></div>
+                <img src="img/money.png" alt="point" class="point" id="point">
+            </div>
+            <table class="buttons">
+                <tr>
+                    <td class="btn btn-none"></td>
+                    <td>
+                        <button class="btn" id="btnTop" onclick="btnTopClick()">🠕</button>
+                    </td>
+                    <td class="btn btn-none"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="btn" id="btnLeft" onclick="btnLeftClick()">🠔</button>
+                    </td>
+                    <td>
+                        <button class="btn" id="btnBottom" onclick="btnBottomClick()">🠗</button>
+                    </td>
+                    <td>
+                        <button class="btn" id="btnRight" onclick="btnRightClick()">🠖</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
